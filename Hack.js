@@ -33,7 +33,7 @@ browserPromise.then(function (browserInstance) {
     let loginButtonClickPromise = page.click('button[data-analytics="LoginPassword"]', { delay: 50 })
     return loginButtonClickPromise
 }).then(function () {
-    let algoSecClickPromise = waitAndClick('a[data-attr1="algorithms"]', page)
+    let algoSecClickPromise = waitAndClick('.topic-card a[data-attr1="algorithms"]', page)
     //wait an click use kr rhe h kyuki login click hone ke bad delay leta h next page load krne me
     return algoSecClickPromise
 }).then(function () {
@@ -41,7 +41,7 @@ browserPromise.then(function (browserInstance) {
     let warmUpPromise = waitAndClick('input[value="warmup"]', page)
     return warmUpPromise
 }).then(function () {
-    let allquestionArrayPromise = $$('.ui-btn.ui-btn-normal.primary-cta.ui-btn-line-primary.ui-btn-styled')
+    let allquestionArrayPromise = page.$$('.ui-btn.ui-btn-normal.primary-cta.ui-btn-line-primary.ui-btn-styled', {delay:100})
     return allquestionArrayPromise
 }).then(function (TotalQuestionArray) {
     // console.log('No of question is  -> ', TotalQuestionArray.length)

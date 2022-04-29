@@ -1,0 +1,23 @@
+{
+  "name": "hackerrank-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Hack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anushagupta1312/HackerRank-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anushagupta1312/HackerRank-Automation/issues"
+  },
+  "homepage": "https://github.com/anushagupta1312/HackerRank-Automation#readme",
+  "dependencies": {
+    "puppeteer": "^13.7.0"
+  }
+}
